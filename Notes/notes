@@ -1,0 +1,35 @@
+----------------------------------------------------Introduction-----------------------------------------------------
+
+- What is Redux ? 
+    > Redux is a predictable state container for javascript apps.
+
+- It is for javascript apps
+    > Redux is not tightly coupled with react
+    > It can be use with react, angular, vue and vanilla javascript
+    > It is library for javascript apps
+
+- It is a state container
+    > It stores and manages the state of an application
+
+- It is predictable
+    > predictable means all state transitions are explicit and it is possible to keep track of them
+    > i.e changes to the application's state becomes predictable 
+
+- Why Redux ? 
+    > In Redux, State contain outside of the component hence available to all the components
+    > So we will not need to lift the state in parent component and pass state to other child components(prop drilling)
+    
+- Alternate to Redux
+    > React context - prevents prop drilling
+    > useContext + useReducer
+
+- What is React-Redux ? 
+    > library for binding redux to react
+
+----------------------------------------------------Setting up project-----------------------------------------------------
+
+1. Install node and npn (ignore if already installed)
+2. Create Folder 
+3. Enter into folder, run "npm init --yes" (package.json will be created)
+4. install redux, "npm install redux"
+5. create index.js, add log statement and test it using cmd "node index" in terminal
