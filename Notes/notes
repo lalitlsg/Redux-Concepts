@@ -44,3 +44,34 @@
 
 - Reducer
     > Ties the store and action together, i.e carried out state transitions depending on the action
+
+----------------------------------------------------Three Principles-----------------------------------------------------
+
+//Relate the examples give below  with respect to cake shop
+
+First Principle
+    > The state of your whole application is stored in an object tree within a single store
+    > i.e maintaining the application state in a single object which would be manage by the redux store
+    eg: {
+        noOfCakes: 10
+    } 
+
+Second Principle
+    > The only way to change the state is to dispatch an action, an object describing what happened
+    > i.e to update the state of your app, you need to let redux know about that with an action
+    > Not allowed to directly update the state object
+    eg: {
+        type: BUY_CAKE
+    }
+
+Third Principle
+    > To specify how the state tree is transformed by actions, you write pure reducers
+    > Reducer - (previousState, action) => newState
+    eg:
+    const reducer = (state, action) => {
+        switch(action.type){
+            case BUY_CAKE: return {
+                noOfCakes: state.noOfCakes - 1
+            }
+        }
+    }
