@@ -33,3 +33,14 @@
 3. Enter into folder, run "npm init --yes" (package.json will be created)
 4. install redux, "npm install redux"
 5. create index.js, add log statement and test it using cmd "node index" in terminal
+
+----------------------------------------------------Three Core Concepts-----------------------------------------------------
+
+- Store
+    > Holds the state of an application
+
+- Action
+    > Describes changes in the state of the application, i.e what happened with the state
+
+- Reducer
+    > Ties the store and action together, i.e carried out state transitions depending on the action
