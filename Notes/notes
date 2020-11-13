@@ -97,3 +97,9 @@ Third Principle
     > Allows state to be updated via dispatch(action)
     > Registers listeners via subscribe(listener)
     > Handles unregistring of listeners via the function return by subscribe(listener)
+
+----------------------------------------------------Middleware-----------------------------------------------------
+
+    > Way to extend redux with custom functionality
+    > Provides third party extension point between dispatching an action, and the moment it reaches the reducer
+    > Use middleware for logging, crash reporting, performing async task, etc.
