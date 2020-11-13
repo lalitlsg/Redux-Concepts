@@ -83,3 +83,9 @@ Third Principle
     > plain javascript object
     > Have a 'type' property that indicates the type of action being performed 
     > The 'type' property is typically defined as string constant
+
+----------------------------------------------------Reducers-----------------------------------------------------
+
+    > Specify how the app's state changes in response to the action sent to the store
+    > It is simply a function that accepts the state and action as arguments and returns next state
+    
